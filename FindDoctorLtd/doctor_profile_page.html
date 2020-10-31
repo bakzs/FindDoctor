@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+  body{
+      width:80%;
+  }
+  </style>
+  <title>FindDoctorLtd</title>
+</head>
+<body>
+  <nav class="navigation">
+    <a href="#"><img src="img/logo.png" class="logo" alt="Logo"></a>
+    <div class="page-links">
+      <a href="our_doctors.html" class="nav-link">Find A Doctor</a>
+      <a href="#" class="nav-link">Services</a>
+      <a href="#" class="nav-link">About</a>
+      <a href="#" class="nav-link">Contact Us</a>
+    </div>
+  </nav>
+
+    <div class="doc_profile_page">
+        <div class="doc_title">
+            <h1>Dr. Sylvia Lancaster</h1>
+        </div>
+        <div class="doc_dp">
+            <img class="doc_profile_pic" src="./img/profile_pic/doc1.jpeg" alt='profile picture'>
+        </div>
+        <div class="doc_desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium cum enim doloremque, sed natus, a aperiam exercitationem hic ut soluta accusantium minima voluptatibus. Assumenda fugiat soluta voluptate et, officiis quia!
+        </div>  
+        <div class="doc_info">
+            <strong>Address Timing</strong>
+            
+        </div>
+        <div class="doc_book">
+            <form action="/book_an_appointment.html">
+                <label for="visitreason">What is the reason for your visit?</label>
+                <select name="visitreason" id="visitreason">
+                    <option value="General">General</option>
+                    <option value="Dental">Dental</option>
+                </select>
+                <label for="appt-datetime">Select an available time</label><br>
+                <input type="datetime-local" id="appt-datetime" name="appt-datetime" min="2020-01-01T09:00" step="900"><br><br>
+
+                <button class="doc_book_btn" type="submit" >Book Appointment</button>
+            </form>
+        </div>
+    </div>
+  
+
+
+    <h2>Recent Reviews</h2>
+    <div class="review_section">
+        <div class="review_customer">
+            <strong>Mr. Trump</strong>
+        </div>
+        <div class="review_rating">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/empty_star.svg" alt="">
+                <img src="img/empty_star.svg" alt="">
+        </div>
+        <div class="review_date">
+            <p>10/19/2020</p>
+        </div>
+        <div class="review_comment">
+            I can be a better doctor than her!
+        </div>
+    </div>
+    <div class="review_section">
+        <div class="review_customer">
+            <strong>Joe Biden</strong>
+        </div>
+        <div class="review_rating">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+        </div>
+        <div class="review_date">
+            <p>10/19/2020</p>
+        </div>
+        <div class="review_comment">
+            Vote for her!
+        </div>
+    </div>
+    
+    
+    
+    
+
+
+    <p>Leave a Review!</p>
+    <a href="#" class="btn">Booking ID</a>
+    <a href="#" class="btn">Your Ratings</a>
+    <a href="#" class="btn">Submit</a>
+
+    <textarea name="" id="" cols="30" rows="10">Review Message</textarea>
+
+  <footer>
+    <div class="footer__logo">
+      <a href="index.html"><img src="img/logo.png" class="logo" alt="Logo"></a>
+    </div>
+    <div class="details__box">
+      <h2 class="details">
+        <span>Comapany name</span>
+        <span>Comapany email</span>
+        <span>Comapany address</span>
+      </h2>
+    </div>
+    <div class="social">
+      <span>Follow us on social media</span>
+      <div class="social--icons">
+        <a href="#"><img src="img/036-facebook.svg" alt="Facebook Icon"></a>
+        <a href="#"><img src="img/008-twitter.svg" alt="Twitter Icon"></a>
+        <a href="#"><img src="img/029-instagram.svg" alt="Instagram Icon"></a>
+        <a href="#"><img src="img/027-linkedin.svg" alt="LinkedIn Icon"></a>
+      </div>
+    </div>
+    <hr>
+    <div class="privacy">
+      <span>Privacy</span>
+      <p>Copyright &copy; 2020 by FindDoctor Pte Ltd.</p>
+      <p>All Rights Reserved</p>
+    </div>
+  </footer>
+
+</body>
+</html>

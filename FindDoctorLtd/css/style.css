@@ -1,0 +1,374 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.7;
+  min-width:1100px;
+  margin: auto;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.navigation {
+  background-color: #FFFFFF;
+}
+
+.logo {
+  height: 8rem;
+}
+
+.nav-link {
+  font-size: 1.9rem;
+  color: rgb(55, 189, 189);
+  padding: .5rem 1.5rem;
+  font-weight: 900;
+  margin-right: 3rem;
+
+}
+
+.nav-link:hover{
+  background-color:rgba(6, 23, 29, 0.2)
+}
+
+.nav-link:last-child {
+  margin-right: 0;
+}
+
+.page-links {
+  float: right;
+  margin: 3rem;
+}
+
+.hero-section {
+  background-image: url("../img/docs_banner.png");
+  height: 70vh;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.hero-section__text-box {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  padding: 2rem;
+}
+
+.hero-section__button {
+  border: 1px solid #FFFFFF;
+  position: absolute;
+  top: 65%;
+  left: 5%;
+  padding: 2rem;
+}
+
+.heading--main {
+  display: block;
+  font-size: 2rem;
+  color: #FFFFFF;
+}
+
+.heading hr {
+  width: 112%;
+  margin-left: -2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.heading--sub {
+  display: block;
+  font-size: 2rem;
+  color: #eeeeee;
+}
+
+.btn {
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
+.title {
+  display: table;
+  border: 1px solid #000000;
+  padding: 1rem;
+}
+
+.services__box {
+  display: inline-block;
+}
+
+.services__logo {
+  display: block;
+}
+
+.doctors__image {
+  height: 180px;
+  width: 220px;
+}
+
+.doctors__name {
+  display: block;
+}
+
+.doctors__rating img {
+  height: 30px;
+  width: 30px;
+}
+
+.social--icons img {
+  height: 50px;
+  width: 50px;
+}
+
+.details span {
+  display: block;
+}
+
+.details__image {
+  float: left;
+  height: 180px;
+  width: 220px;
+}
+
+.details__text {
+  float: right;
+}
+
+.btn {
+  color: #000000;
+  font-size: 1.6rem;
+}
+
+.review__rating img {
+  height: 30px;
+  width: 30px;
+}
+
+.review__image {
+  height: 180px;
+  width: 220px;
+}
+
+.flex-container {
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  background-color: DodgerBlue;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height:300px
+}
+
+@media (max-width: 1000px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 30px;
+}
+
+.doc_profile_pic {
+  width:500px;
+}
+
+/* DOCTOR PROFILE */
+
+.doc_title { grid-area: doc_title; }
+.doc_dp { grid-area: doc_dp; }
+.doc_desc { grid-area: doc_desc; }
+.doc_info { grid-area: doc_info; }
+.doc_book { grid-area: doc_book; }
+.doc_book_details{ grid-area: doc_book_details;}
+.review_customer{ grid-area: review_customer;}
+.review_rating{ grid-area: review_rating;}
+.review_date{ grid-area: review_date;}
+.review_comment{ grid-area: review_comment;}
+
+.doc_profile_desc {
+  display: grid;
+  grid-template-areas:
+    'doc_dp doc_dp doc_title doc_title doc_info doc_info'
+    'doc_dp doc_dp doc_desc doc_desc doc_info doc_info'
+    'doc_dp doc_dp doc_desc doc_desc doc_info doc_info'
+    'doc_dp doc_dp doc_desc doc_desc doc_book doc_book';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  margin: 5px;
+}
+
+.doc_profile_desc > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* text-align: center; */
+  padding: 20px 10px;
+  font-size: 1.6rem;
+}
+
+.doc_profile_page {
+  display: grid;
+  grid-template-areas:
+    'doc_dp  doc_title doc_title doc_title doc_title doc_title'
+    'doc_dp  doc_info doc_info doc_book doc_book doc_book'
+    'doc_dp  doc_desc doc_desc doc_book doc_book doc_book'
+    'doc_dp  doc_desc doc_desc doc_book doc_book doc_book';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  margin: 5px;
+}
+
+.doc_profile_page > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* text-align: center; */
+  padding: 20px 10px;
+  font-size: 1.6rem;
+}
+
+.review_section {
+  display: grid;
+  grid-template-areas:
+    'review_customer  review_rating review_rating review_rating review_date review_date'
+    'review_comment  review_comment review_comment review_comment review_comment review_comment'
+    'review_comment  review_comment review_comment review_comment review_comment review_comment';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  margin: 5px;
+  width:50%
+}
+.review_rating img{
+  width: 15px;
+}
+.review_section > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* text-align: center; */
+  padding: 20px 10px;
+  font-size: 1.6rem;
+}
+
+.doc_profile_page > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* text-align: center; */
+  padding: 20px 10px;
+  font-size: 1.6rem;
+}
+
+
+.doc_mini_desc {
+  display: grid;
+  grid-template-areas:
+    'doc_title doc_dp'
+    'doc_book_details doc_dp';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  margin: 5px;
+  justify-content: center;
+}
+.doc_mini_desc img{
+  width: 200px;
+}
+
+
+
+
+.doc_book_btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
+.doc_book_btn:hover {
+  background-color: #4CAF50; /* Green */
+  color: rgb(142, 203, 144);
+}
+
+
+/* SIGN UP PAGE */
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea, input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

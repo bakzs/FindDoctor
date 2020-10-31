@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <title>FindDoctorLtd</title>
+</head>
+<body>
+  <nav class="navigation">
+    <a href="index.html"><img src="img/logo.png" class="logo" alt="Logo"></a>
+    <div class="page-links">
+      <a href="our_doctors.html" class="nav-link">Find A Doctor</a>
+      <a href="#" class="nav-link">Services</a>
+      <a href="#" class="nav-link">About</a>
+      <a href="#" class="nav-link">Contact Us</a>
+    </div>
+  </nav>
+
+  <div class="doc_mini_desc">
+      <div class="doc_title"><h2>Dr. John Johnson</h2></div>
+      <div class="doc_book_details">10AM-11AM, Orchard Rd</div>
+      <div class="doc_dp"><img class="doc_profile_pic" src="./img/profile_pic/doc2.jpeg" alt='profile picture'></div>
+  </div>
+
+  <div class="container" style="width:70%; margin:auto;">
+      <form action="/booking_success.html">
+      <div><h1>Register with your details.</h1><strong>Fields with * is required.</strong>
+        </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="firstname">First Name *</label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name *</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+            <label for="number">Contact Number *</label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="number" name="number" placeholder="Contact Number" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email *</label>
+        </div>
+        <div class="col-75">
+          <input type="email" id="email" name="email" placeholder="xxx@email.com" required>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-25">
+            <label for="email">Personal Identification *</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="ic" name="ic" placeholder="S91234567A" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="medhist">Medical History</label>
+          </div>
+          <div class="col-75">
+            <textarea name="medhist" id="medhist" cols="20" rows="5" placeholder=""></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="drugallergy">Drug Allergies</label>
+          </div>
+          <div class="col-75">
+            <textarea name="drugallergy" id="drugallergy" cols="20" rows="5" placeholder="Example: Seafood, Eggs, Paracetomol.."></textarea>
+          </div>
+        </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+      </form>
+    </div>
+
+
+
+
+  <footer>
+    <div class="footer__logo">
+      <a href="#"><img src="img/logo.png" class="logo" alt="Logo"></a>
+    </div>
+    <div class="details__box">
+      <h2 class="details">
+        <span>Comapany name</span>
+        <span>Comapany email</span>
+        <span>Comapany address</span>
+      </h2>
+    </div>
+    <div class="social">
+      <span>Follow us on social media</span>
+      <div class="social--icons">
+        <a href="#"><img src="img/036-facebook.svg" alt="Facebook Icon"></a>
+        <a href="#"><img src="img/008-twitter.svg" alt="Twitter Icon"></a>
+        <a href="#"><img src="img/029-instagram.svg" alt="Instagram Icon"></a>
+        <a href="#"><img src="img/027-linkedin.svg" alt="LinkedIn Icon"></a>
+      </div>
+    </div>
+    <hr>
+    <div class="privacy">
+      <span>Privacy</span>
+      <p>Copyright &copy; 2020 by FindDoctor Pte Ltd.</p>
+      <p>All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+
+  <!-- slick slider -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- custom JS -->
+  <script src="js/custom.js"></script>
+
+</body>
+</html>
